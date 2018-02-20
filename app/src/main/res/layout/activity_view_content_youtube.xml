@@ -1,0 +1,85 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/main">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <include layout="@layout/app_bar"
+            android:id="@+id/app_bar"/>
+
+
+        <Button
+            android:id="@+id/imgCircle"
+            android:background="@drawable/logocircle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/View"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-35dp"/>
+
+
+        <TextView
+            android:id="@+id/JudulView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imgCircle"
+            android:text="@string/Memuat"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JudulView"
+            android:id="@+id/AsalView"
+            android:textAlignment="center"
+            android:textColor="#febe40"
+            android:textAllCaps="true"
+            android:text="@string/Memuat"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AsalView">
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_margin="20dp"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/IsiView"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp"
+            android:text="@string/Memuat"/>
+        </ScrollView>
+        <View
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/round_white_bg"/>
+
+        <include layout="@layout/app_bar"
+            android:id="@+id/app_bar"/>
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/videoView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

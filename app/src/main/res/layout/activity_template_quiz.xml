@@ -1,0 +1,87 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/round_white_bg"/>
+        <ImageView
+            android:id="@+id/imgSoal"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+        <include layout="@layout/app_bar"
+            android:id="@+id/app_bar"/>
+
+
+
+
+        <Button
+            android:id="@+id/imgCircle"
+            android:background="@drawable/logocircle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/View"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-35dp"/>
+
+
+        <TextView
+            android:id="@+id/textSoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imgCircle"
+            android:text="@string/Memuat"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+       <RadioGroup
+           android:id="@+id/radioGroup"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textSoal"
+           android:layout_margin="50dp">
+           <RadioButton
+               android:id="@+id/radioButtonA"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#fff"/>
+           <RadioButton
+               android:id="@+id/radioButtonB"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#fff"/>
+           <RadioButton
+               android:id="@+id/radioButtonC"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#fff"/>
+       </RadioGroup>
+
+        <Button
+            android:id="@+id/btnOkSoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_done" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

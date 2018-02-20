@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Bunesia</string>
+    <string name="cerita_daerah"> Cerita Daerah </string>
+    <string name="kesenian_daerah"> Kesenian Daerah </string>
+    <string name="adat_istiadat"> Adat Istiadat </string>
+    <string name="quiz_bunesia"> Quiz Bu Nesia </string>
+    <string name="tanya_bunesia"> Tanya Bu Nesia </string>
+    <string name="bunesia"> Bu Nesia </string>
+    <string name="acara_adat"> Acara Adat </string>
+    <string name="alat_musik"> Alat Musik Daerah </string>
+    <string name="lagu_daerah"> Lagu Daerah </string>
+    <string name="pakaian_tradisional"> Pakaian Tradisional </string>
+    <string name="tari_tradisional"> Tari Tradisional </string>
+    <string name="senjata_tradisional"> Senjata Tradisional </string>
+    <string name="rumah_adat"> Rumah Adat </string>
+    <string name="nama"> Nama </string>
+    <string name="pertanyaan"> Pertanyaan </string>
+    <string name="listqna"> List Q n A </string>
+    <string name="home"><b>home</b></string>
+    <string name="judulcerita"> Judul Cerita </string>
+    <string name="asalcerita"> Asal Cerita </string>
+    <string name="download_data">Download Data From Server\nPlease wait...</string>
+    <string name="Memuat">Sedang Memuat....</string>
+    <string name="belum_dijawab">Belum dijawab</string>
+    <string name="mulai">Mulai</string>
+    <string name="descQuiz">Yuk asah Kemampuan kamu tentang Indonesia !Jawab semua pertanyaannya dan dapatkan skor tertinggi!!!</string>
+    <string name="selamat">selamat!</string>
+    <string name="score">score : </string>
+    <string name="jawaban">Jawaban</string>
+    <string name="leaderBoard">LeaderBoard</string>
+    <string name="berhasil">Selamat Kamu Telah berhasil Menyelesaikan Quiz Bu Nesia !</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

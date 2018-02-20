@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123444">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/toolbarTopAcara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnBackAcara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/acara_adat"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/btnMenuAcara"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="#00000000"
+                        android:src="@drawable/ic_menu" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/headerAcara"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@+id/toolbarTopAcara"
+            android:layout_marginTop="-2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/acara_adat_banner_01x" />
+
+        <SearchView
+            android:id="@+id/searchAcara"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerAcara"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-10dp"
+            android:background="#fff" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/RefreshAcara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchAcara">
+
+            <ListView
+                android:id="@+id/ListAcara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchAcara"
+                android:padding="20dp" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAcara"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_camera_enhance"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"/>
+
+
+
+
+    <include layout="@layout/loading_and_result"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/HiddenIdQna"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutPertanyaan">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgPenanya"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logocircle"
+                android:padding="3dp"/>
+            <TextView
+                android:textColor="#123444"
+                android:id="@+id/namaPenanya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgPenanya"
+                android:text="@string/Memuat"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/pertanyaan"
+                android:layout_below="@id/namaPenanya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgPenanya"
+                android:text="@string/Memuat"
+                android:layout_marginLeft="8dp"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutPertanyaan"
+            android:background="#febe40">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgBunesia"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logocircle"
+                android:layout_alignParentEnd="true"
+                android:padding="3dp"/>
+            <TextView
+                android:textColor="#123444"
+                android:id="@+id/namaBunesia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/imgBunesia"
+                android:text="@string/bunesia"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/jawaban"
+                android:layout_below="@id/namaBunesia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/imgBunesia"
+                android:text="@string/Memuat"
+                android:layout_marginLeft="8dp"/>
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

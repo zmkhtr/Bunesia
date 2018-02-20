@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HiddenIdsimple"
+        android:visibility="invisible" />
+
+
+    <ImageView
+        android:id="@+id/imgListSimple"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cerita_daerah_01" />
+        <TextView
+            android:textColor="#123444"
+            android:id="@+id/listJudulsimple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgListSimple"
+            android:text="@string/Memuat"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/listAsalsimple"
+        android:layout_below="@id/listJudulsimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgListSimple"
+        android:text="@string/Memuat"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_keyboard_arrow_right" />
+
+
+</RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
